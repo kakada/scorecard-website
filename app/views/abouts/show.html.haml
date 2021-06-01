@@ -1,5 +1,6 @@
-.d-flex.my-4.mx-auto.introduction
+.d-flex.my-4.mx-auto.introduction.justify-content-between
   = link_to t('shared.back'), root_path
+  = link_to t('shared.sign_in'), ENV['SIGN_URL'], target: '_blank'
 
 .row
   .col-md-12
