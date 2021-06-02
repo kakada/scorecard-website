@@ -32,6 +32,10 @@
       width: 245px;
     }
   }
+
+  .rounded-xl {
+    border-radius: 1rem !important
+  }
 }
 
 @media screen and (max-width: 450px) {
