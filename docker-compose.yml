@@ -6,11 +6,11 @@ volumes:
 
 services:
   db:
-    image: postgres:12.2
+    image: nouchka/sqlite3:latest
     volumes:
-      - db:/var/lib/postgresql/data
-    environment:
-      POSTGRES_HOST_AUTH_METHOD: trust
+      - db:/root/db
+    stdin_open: true
+    tty: true
 
   web: &rails
     build:
