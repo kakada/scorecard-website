@@ -50,9 +50,18 @@ $height-lg: 65px;
   .stackholders,
   .stackholders-lg {
     display: block !important;
-  }
 
-  .implemented-by {
-    margin-top: 30px;
+    .implemented-by {
+      margin-top: 30px;
+    }
+  
+    .img-implemented-wrapper {
+      height: auto;
+  
+      & > a:not(:last-child) {
+        margin-right: 0;
+        margin: 0 0 25px 0;
+      }
+    }
   }
 }
