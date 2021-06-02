@@ -1,0 +1,38 @@
+$primary: #e4761e;
+
+#faq-index {
+  margin-bottom: 9.375em;
+
+  .faq-body {
+    font-size: 1.3em;
+    padding: 15px;
+    margin: 16px;
+    border-left: 2px solid $primary;
+    margin-left: 62px;
+  }
+
+  .heading {
+    padding: 15px 0;
+    border-top: 1px solid #efefef;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .fa-primary {
+    color: $primary;
+  }
+
+  .list-style-lower-alpha {
+    list-style-type: lower-alpha;
+  }
+
+  [aria-expanded=true] .fa-plus {
+    display: none;
+  }
+
+  [aria-expanded=false] .fa-minus {
+    display: none;
+  }
+}

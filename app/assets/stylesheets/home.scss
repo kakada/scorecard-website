@@ -1,3 +1,5 @@
+@import 'home/stackholders';
+
 #home-index {
   .logo-wrappers {
     display: flex;
@@ -29,6 +31,10 @@
     img {
       width: 245px;
     }
+  }
+
+  .rounded-xl {
+    border-radius: 1rem !important
   }
 }
 
