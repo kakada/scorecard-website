@@ -1,4 +1,4 @@
-#abouts-show {
+#home-index {
   .logo-wrappers {
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  #abouts-show {
+  #home-index {
     .logo-wrappers {
       display: block;
       text-align: center;

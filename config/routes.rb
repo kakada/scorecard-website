@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'abouts#show'
+  root to: 'home#index'
 
-  get '/faq', to: 'faq#index'
-  resource :about, only: [:show]
+  get 'home', to: 'home#index'
+  get 'faq',  to: 'faq#index'
 end
