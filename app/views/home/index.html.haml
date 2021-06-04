@@ -20,14 +20,16 @@
 
 .d-flex.justify-content-between.my-5.mx-auto.introduction
   .learn-more
-    %h5.text-center
+    %h5.text-center.font-weight-normal
       %span= "អាចស្វែងយល់បន្ថែមនៅលើ FAQs ដោយគ្រាន់តែចុច"
       %span= link_to 'នៅទីនេះ', faq_path
-      %span= ". សម្រាប់អ្នកមិនមានគណនីហើយដែលចង់ស្វែងយល់បន្ថែមសូមទាក់ទងមកយើងតាមរយៈ support@digital-csc.org"
-    %h6.text-center
+      %span= ". សម្រាប់គម្រោងដែលមានបំណងចង់ស្វែងយល់បន្ថែមសូមទាក់ទងមកយើងតាមរយៈ "
+      = mail_to 'support@digital-csc.org'
+    %h6.text-center.font-weight-normal
       %span= "To learn more from our FAQs, click "
       %span= link_to 'here', faq_path
-      %span= ". if you don't have an account and want to learn more please reach out to use via: support@digital-csc.org"
+      %span= ". For projects that willing to find out more, please reach us out via: "
+      .text-nowrap= mail_to 'support@digital-csc.org'
 
 .introduction.mx-auto
   .stackholders.d-flex.justify-content-between.stackholders-lg
