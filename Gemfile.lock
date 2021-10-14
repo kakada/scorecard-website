@@ -202,7 +202,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
-  google-analytics-rails (= 1.1.1)
+  google-analytics-rails (~> 1.1.1)
   haml-rails (~> 2.0)
   jbuilder (~> 2.7)
   listen (~> 3.3)
