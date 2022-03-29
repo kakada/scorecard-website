@@ -1,2 +1,52 @@
 en:
-  faq: FAQ
+  faq: Frequently Asked Questions
+  language:
+    en: English
+    km: ខ្មែរ
+  introduction:
+    the_digital_scorecard_app: The Digitised Scorecard App…
+    digital_scorecard_introduction: "development is funded by the EU, implemented by CARE, API and InSTEDD iLab Southeast Asia under the project “Supporting meaningful civic engagement and improved social accountability by leveraging digital technologies (Re: ISAF-II)”. The community members, local NGO partners and governmental officials use the app to enhance their participation and dialogue with regards to public services improvement."
+    download_available: Download Available
+    version: Version
+
+  stakeholder:
+    funded_by: Funded by
+    implemented_by: Implemented by
+
+  question:
+    can_my_project_use_digital_scorecard: Can my project/organization use the blended digital scorecard?
+    why_should_i_use_digital_scorecard: Why should I use the free and open-source Blended Digital Scorecard?
+    why_should_i_not_reinvent_the_wheel: Why should I not create another new application for the same purpose?
+    how_to_set_up_digital_scorecard: How can I set up the Blended Digital Scorecard tool for my project?
+    is_there_central_digital_scorecard: Is there a central Blended Digital Scorecard dashboard that provides a big picture from other implementers that use the same tool?
+    where_can_i_get_support: Where can I learn or get the support to roll out the Blended Digital Scorecard for my project?
+    what_about_data_ownership: What about data ownership and data security?
+  answer:
+    q1:
+      yes_digital_scorecard_is_free: Yes, of course. Blended digital scorecard is a free and open-source application.
+    q2:
+      digital_scorecard_was_designed: Blended Digital Scorecard was designed with a rigorous human-centered design and field validation.
+      it_provide_flexibility: It provides flexibility for project implementers to create their own form indicators
+      it_support_khmer_language: It supports the local Khmer language, including an option to upload audio for indicators
+      it_come_with_dashboard: It comes with the dashboard where the program can view their scorecard implementation progress in real-time
+      see_here_videos: See here videos
+      about_digital_scorecard: about Blended Digital Scorecard.
+    q3:
+      save_resource: Save resources, not reinvent the wheel
+      has_an_existing_community: The existing free and open-source software has an existing community that you can learn from their experience of implementation and practice.
+      if_feel_not_match_purpose_let_consult: If you feel that the Blended Digital Scorecard does not fit your needs, we strongly recommend you to consult with our project team to get clarification and information you need before making your final decision in creating a new application.
+    q4:
+      digital_scorecard_has_two_component: The package of Blended digital scorecard has 2 components
+      has_mobile_app: Mobile application for Android phone.
+      link_to_download: Link to PlayStore to download
+      the_application: the application.
+      install_backend_on_your_server: Install the Web and dashboard application on your own server (we recommend using a cloud server)
+      link_to_source_code: Link to source code repository and installation guide
+      configure_on_mobile_app: Configure on the mobile application to point to your web application endpoint
+    q5:
+      yes_there_is_central_digital_scorecard: Yes, you and other implementers that use Blended Digital Scorecard can decide to share your aggregated data from your own server to the central dashboard server. By sharing the aggregated digital scorecard data from your own project, you support the open data and allow the public to view the progress of the scorecard implementation in Cambodia.
+    q6:
+      please_contact_care_and_api: To learn more from the implementation rollout, please contact CARE and API
+      please_contact_instedd: For technical aspects, please contact InSTEDD
+    q7:
+      the_data_owned_by_your_server: The data will be owned and fully managed by your organization at your server.

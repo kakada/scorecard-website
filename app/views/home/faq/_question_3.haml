@@ -1,0 +1,9 @@
+.border.mb-2.shadow
+  = render 'home/faq/question', target: 'Three', question: t('question.why_should_i_not_reinvent_the_wheel')
+
+  #collapseThree.collapse{"aria-labelledby" => "headingThree", "data-parent" => "#faq"}
+    .faq-body
+      %ol
+        %li= t('answer.q3.save_resource')
+        %li= t('answer.q3.has_an_existing_community')
+        %li= t('answer.q3.if_feel_not_match_purpose_let_consult')

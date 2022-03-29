@@ -1,0 +1,15 @@
+.border.mb-2.shadow
+  = render 'home/faq/question', target: 'Two', question: t('question.why_should_i_use_digital_scorecard')
+
+  #collapseTwo.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#faq"}
+    .faq-body
+      = t('answer.q2.digital_scorecard_was_designed')
+
+      %ul
+        %li= t('answer.q2.it_provide_flexibility')
+        %li= t('answer.q2.it_support_khmer_language')
+        %li= t('answer.q2.it_come_with_dashboard')
+
+      = link_to t('answer.q2.see_here_videos'), "https://www.youtube.com/playlist?list=PLOpKUpKkRrQuWggZRMSIjgAjixiZhXT-j", target: '_blank'
+
+      %span= t('answer.q2.about_digital_scorecard')

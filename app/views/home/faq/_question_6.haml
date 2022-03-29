@@ -1,0 +1,8 @@
+.border.mb-2.shadow
+  = render 'home/faq/question', target: 'Six', question: t('question.where_can_i_get_support')
+
+  #collapseSix.collapse{"aria-labelledby" => "headingSix", "data-parent" => "#faq"}
+    .faq-body
+      %ul
+        %li= t('answer.q6.please_contact_care_and_api')
+        %li= t('answer.q6.please_contact_instedd')

@@ -1,0 +1,144 @@
+.content-wrapper {
+  position: relative;
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+
+.content, .introduction {
+  max-width: 900px;
+}
+
+.bg {
+  width: 1130px;
+  position: absolute;
+  margin-top: -380px;
+  margin-left: -50px;
+  z-index: -1;
+}
+
+// images
+.divices-wrapper {
+  img {
+    width: 330px;
+  }
+}
+
+.qr-code-wrapper {
+  img {
+    width: 120px;
+  }
+}
+
+.play-store {
+  img {
+    width: 170px
+  }
+}
+
+.logo {
+  width: 80px;
+}
+
+@media (min-width: 280px) {
+  .bg {
+    margin-top: -320px !important;
+    margin-left: -510px;
+  }
+
+  .content {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+
+  .introduction {
+    margin-left: 16px !important;
+  }
+
+  .qr-code-wrapper {
+    display: none;
+  }
+
+  .divices-wrapper {
+    width: 104px;
+
+    img {
+      width: 430px !important;
+    }
+  }
+
+  .logo {
+    width: 60px !important;
+  }
+
+  #faq-index {
+    width: 100% !important;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .bg {
+    margin-top: -390px !important;
+    margin-left: -310px !important;
+  }
+
+  .qr-code-wrapper {
+    display: block !important;
+  }
+
+  .content {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
+
+  .introduction {
+    margin-left: 30px !important;
+  }
+
+  .divices-wrapper {
+    width: auto !important;
+
+    img {
+      width: 330px !important;
+    }
+  }
+
+  .logo {
+    width: 76px !important;
+  }
+
+  #faq-index {
+    width: 700px !important;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .content {
+    max-width: 900px !important;
+  }
+
+  .introduction {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .bg {
+    width: 1130px;
+    margin-top: -380px !important;
+    margin-left: -60px !important;
+  }
+
+  .logo {
+    width: 80px !important;
+  }
+
+  #faq-index {
+    width: 800px !important;
+  }
+}

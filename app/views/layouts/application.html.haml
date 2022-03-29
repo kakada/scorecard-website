@@ -3,13 +3,14 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title= ENV['APP_NAME']
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    %meta{:content => "width=device-width,initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
     = csrf_meta_tags
     = csp_meta_tag
+
     = analytics_init if Setting.analytics_valid?
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-  %body.devise-form{ id: "#{controller_name}-#{action_name}"}
-    .container.px-4.px-sm-3
+  %body{ id: "#{controller_name}-#{action_name}"}
+    .content-wrapper
       = yield

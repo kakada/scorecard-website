@@ -76,4 +76,5 @@ yarn-debug.log*
 yarn-debug.log*
 .yarn-integrity
 
+.DS_Store
 app.env

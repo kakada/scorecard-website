@@ -1,0 +1,19 @@
+.border.mb-2.shadow
+  = render 'home/faq/question', target: 'Four', question: t('question.how_to_set_up_digital_scorecard')
+
+  #collapseFour.collapse{"aria-labelledby" => "headingFour", "data-parent" => "#faq"}
+    .faq-body
+      = t('answer.q4.digital_scorecard_has_two_component')
+      %ol
+        %li
+          = t('answer.q4.has_mobile_app')
+          = link_to t('answer.q4.link_to_download'), "https://play.google.com/store/apps/details?id=org.instedd.ilabsea.community_scorecard&hl=km&gl=US", target: "_blank"
+          = t('answer.q4.the_application')
+
+        %li
+          = t('answer.q4.install_backend_on_your_server')
+
+          %ol.list-style-lower-alpha
+            %li= link_to t('answer.q4.link_to_source_code'), "https://github.com/ilabsea/scorecard-web", target: "_blank"
+
+        %li= t('answer.q4.configure_on_mobile_app')
