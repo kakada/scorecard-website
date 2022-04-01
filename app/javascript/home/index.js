@@ -15,7 +15,7 @@ CSC_WEB.HomeIndex = (() => {
       },
       position: "bottom-left",
       content: {
-        href: '#',
+        href: gon.cookiePolicyPath,
       },
     });
   }
