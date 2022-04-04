@@ -4,6 +4,7 @@ class HomeController < ApplicationController
   before_action :set_gon_variable
 
   def index
+    @visitor_count = Ahoy::Visit.count
   end
 
   private

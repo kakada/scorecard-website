@@ -2,3 +2,8 @@
   = t("social_share_button.share_on")
 
 = social_share_button_tag t("meta_tags.site"), url: root_url, image: image_url("csc_logo.png"), "data-type": "photo"
+
+.visitor-counter
+  %span.badge.bg-info.rounded-pill
+    %i.fa.fa-eye
+    = "#{human_size(@visitor_count)}"
