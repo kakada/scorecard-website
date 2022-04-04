@@ -1,0 +1,37 @@
+.sidebar-left {
+  position: fixed;
+  top: 30%;
+  padding-left: 3%;
+  z-index: 1000;
+  left: 0;
+  transition: all 0.1s ease-in;
+  text-align: center;
+
+  @media (max-width: 576px) {
+    padding-left: 0;
+    left: -32px;
+  }
+}
+
+.social-share-button {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    display: block;
+    margin-bottom: 8px;
+    width: 36px !important;
+    height: 36px !important;
+    background-size: 36px !important;
+    background-position: 0;
+  }
+}
+
+.share-icon {
+  font-size: 0.8em;
+  display: inline-block;
+  margin-bottom: 8px;;
+}

@@ -50,3 +50,12 @@ en:
       please_contact_instedd: For technical aspects, please contact InSTEDD
     q7:
       the_data_owned_by_your_server: The data will be owned and fully managed by your organization at your server.
+  social_share_button:
+    share_on: Share one
+  meta_tags:
+    site: The Digital Scorecard Public Dashboard
+    title: Welcome to The Digital Scorecard Public Dashboard
+    description: "Data reported on this dashboard was collected from the actual use of the digitised scorecard app, implemented by CARE, API and InSTEDD iLab Southeast Asia under the project “Supporting meaningful civic engagement and improved social accountability by leveraging digital technologies (Re: ISAF-II)."
+    twitter:
+      site: The Digital Scorecard Public Dashboard
+
