@@ -14,3 +14,13 @@ ActiveStorage.start()
 
 import "@fortawesome/fontawesome-free/js/all";
 import 'bootstrap/dist/js/bootstrap'
+import "cookieconsent/build/cookieconsent.min";
+
+require("application/namespace");
+require("application/util");
+require("home/index");
+
+$(document).on("turbolinks:load", function () {
+  let currentPage = CSC_WEB.Util.getCurrentPage();
+  !!CSC_WEB[currentPage] && CSC_WEB[currentPage].init();
+});
