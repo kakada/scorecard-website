@@ -2,13 +2,23 @@ version: '3'
 
 volumes:
   bundle:
+  db:
 
 services:
+  db:
+    image: postgres:12.4
+    volumes:
+      - db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+
   web: &rails
     build:
       context: .
       dockerfile: Dockerfile.dev
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -b '0.0.0.0'"
+    depends_on:
+      - db
     volumes:
       - .:/app
       - bundle:/usr/local/bundle

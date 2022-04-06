@@ -17,8 +17,7 @@ RUN mkdir /app
 WORKDIR /app
 
 # Install gem bundle
-COPY Gemfile /app/Gemfile
-COPY Gemfile.lock /app/Gemfile.lock
+COPY Gemfile Gemfile.lock /app/
 
 RUN gem install bundler && \
   bundle install --jobs 20 --deployment --without development test
@@ -36,5 +35,7 @@ ENV RAILS_LOG_TO_STDOUT=true
 ENV RACK_ENV=production
 ENV RAILS_ENV=production
 EXPOSE 80
+
+COPY docker/database.yml /app/config/database.yml
 
 CMD ["bundle", "exec", "puma", "-e", "production", "-b", "tcp://0.0.0.0:80"]
