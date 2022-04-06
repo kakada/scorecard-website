@@ -1,6 +1,7 @@
 $font-size: 1em;
-$height: 80px;
-.stackholders {
+$height: 100px;
+
+.stakeholders {
   .text-funded,
   .text-implemented {
     font-size: $font-size;
@@ -11,6 +12,7 @@ $height: 80px;
   }
 
   .img-implemented {
+    margin: 0 5px;
     height: $height / 2;
   }
 
@@ -23,19 +25,20 @@ $height: 80px;
 }
 
 $font-size-lg: 1.2em;
-$height-lg: 65px;
-.stackholders-lg {
+$height-lg: 50px;
+
+.stakeholders-lg {
   .text-funded,
   .text-implemented {
     font-size: $font-size-lg;
   }
 
   .img-funded {
-    height: $height-lg *2;
+    height: $height-lg *1.25;
   }
 
   .img-implemented {
-    height: $height-lg;
+    height: $height-lg *.75;
   }
 
   .img-implemented-wrapper {
@@ -46,18 +49,18 @@ $height-lg: 65px;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .stackholders,
-  .stackholders-lg {
+@media screen and (max-width: 767px) {
+  .stakeholders,
+  .stakeholders-lg {
     display: block !important;
 
     .implemented-by {
       margin-top: 30px;
     }
-  
+
     .img-implemented-wrapper {
       height: auto;
-  
+
       & > a:not(:last-child) {
         margin-right: 0;
         margin: 0 0 25px 0;

@@ -1,0 +1,24 @@
+#switch-language {
+  #messagesDropdown {
+    color: #fff;
+
+    span {
+      display: none;
+    }
+  }
+
+  .switch-language {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #messagesDropdown span{
+    display: inline !important;
+  }
+}

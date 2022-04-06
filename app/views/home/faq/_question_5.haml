@@ -1,0 +1,8 @@
+.border.mb-2.shadow
+  = render 'home/faq/question', target: 'Five', question: t('question.is_there_central_digital_scorecard')
+
+  #collapseFive.collapse{"aria-labelledby" => "headingFive", "data-parent" => "#faq"}
+    .faq-body
+      = t('answer.q5.yes_there_is_central_digital_scorecard')
+      .my-4
+        = image_tag 'how-score-card-works.png', alt: 'How scorecard works', class: 'img-fluid'
