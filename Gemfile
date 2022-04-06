@@ -38,6 +38,7 @@ gem "gon", "6.4.0"
 
 gem "social-share-button", "~> 1.2.4"
 gem "meta-tags", "~> 2.16.0"
+gem "ahoy_matey", "~> 4.0.3"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
