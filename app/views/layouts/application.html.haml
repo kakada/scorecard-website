@@ -4,13 +4,17 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title= ENV['APP_NAME']
     %meta{:content => "width=device-width,initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    = display_meta_tags SocialMetaTag.to_meta_tags
+
     = csrf_meta_tags
     = csp_meta_tag
 
+    %link{:crossorigin => "anonymous", :href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css", :integrity => "sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==", :referrerpolicy => "no-referrer", :rel => "stylesheet"}
+
     = analytics_init if Setting.analytics_valid?
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
     = Gon::Base.render_data
 
   %body{ id: "#{controller_name}-#{action_name}"}
