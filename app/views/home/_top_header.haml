@@ -4,24 +4,24 @@
       = image_tag 'logo.png', class: 'logo'
 
     / Switch language
-    #switch-language
-      %a#messagesDropdown.nav-link.dropdown-toggle.pr-0{ "data-toggle" => "dropdown", :href => "#", :role => "button"}
+    #switch-language.btn-group
+      %a#messagesDropdown.nav-link.dropdown-toggle.pe-0{"aria-expanded" => "false", "data-bs-toggle" => "dropdown", :type => "button", href: '#'}
         - language = { en: "english.png", km: "khmer.png" }
-        = image_tag language[I18n.locale], alt: "locale", size: "24x24", class: "mr-2"
+        = image_tag language[I18n.locale], alt: "locale", size: "24x24", class: "me-2"
         %span= t("language.#{I18n.locale}")
         %i.fas.fa-angle-down.fa-fw
 
-      .dropdown-list.dropdown-menu.dropdown-menu-right{"aria-labelledby" => "messagesDropdown"}
-        = link_to url_for(request.query_parameters.merge(locale: 'km')), class: 'switch-language dropdown-item d-flex align-items-center' do
-          .dropdown-list-image.mr-3
-            = image_tag "khmer.png", alt: "locale", size: "24x24", class: "mr-2"
+      %ul.dropdown-menu.dropdown-menu-end
+        %li
+          = link_to url_for(request.query_parameters.merge(locale: 'km')), class: 'switch-language dropdown-item d-flex align-items-center' do
+            .dropdown-list-image.me-3
+              = image_tag "khmer.png", alt: "locale", size: "24x24", class: "me-2"
 
-          .font-weight-bold
-            .text-truncate= t('language.km')
-
-        = link_to url_for(request.query_parameters.merge(locale: 'en')), class: 'switch-language dropdown-item d-flex align-items-center' do
-          .dropdown-list-image.mr-3
-            = image_tag "english.png", alt: "locale", size: "24x24", class: "mr-2"
-          .font-weight-bold
-            .text-truncate= t('language.en')
-
+            .font-weight-bold
+              .text-truncate= t('language.km')
+        %li
+          = link_to url_for(request.query_parameters.merge(locale: 'en')), class: 'switch-language dropdown-item d-flex align-items-center' do
+            .dropdown-list-image.me-3
+              = image_tag "english.png", alt: "locale", size: "24x24", class: "me-2"
+            .font-weight-bold
+              .text-truncate= t('language.en')
