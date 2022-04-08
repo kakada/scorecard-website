@@ -1,6 +1,6 @@
-.border.mb-2.shadow
+.accordion-item.mb-2.shadow.border
   = render 'home/faq/question', target: 'One', question: t('question.can_my_project_use_digital_scorecard')
 
-  #collapseOne.collapse{"aria-labelledby" => "headingOne", "data-parent" => "#faq"}
-    .faq-body
+  #collapseOne.accordion-collapse.collapse{"aria-labelledby" => "headingOne", "data-bs-parent" => "#faq"}
+    .faq-body.accordion-body
       = t('answer.q1.yes_digital_scorecard_is_free')
