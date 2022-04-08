@@ -1,7 +1,7 @@
-.border.mb-2.shadow
+.accordion-item.mb-2.shadow.border
   = render 'home/faq/question', target: 'Two', question: t('question.why_should_i_use_digital_scorecard')
 
-  #collapseTwo.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#faq"}
+  #collapseTwo.accordion-collapse.collapse{"aria-labelledby" => "headingTwo", "data-bs-parent" => "#faq"}
     .faq-body
       = t('answer.q2.digital_scorecard_was_designed')
 

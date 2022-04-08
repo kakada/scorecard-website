@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: scorecard_website_production
+  database: /var/lib/scorecard_website/scorecard_website_production.sqlite3
   username: scorecard_website
   password: <%= ENV['SCORECARD_WEBSITE_DATABASE_PASSWORD'] %>

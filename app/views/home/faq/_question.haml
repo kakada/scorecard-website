@@ -1,7 +1,4 @@
-.heading{"aria-controls" => "collapse#{target}", "aria-expanded" => "false", "data-target" => "#collapse#{target}", "data-toggle" => "collapse", id: "heading#{target}" }
-  .d-flex
-    .flex-grow-1.question= question
+.accordion-header
+  .heading.accordion-button.collapsed{"aria-controls" => "collapse#{target}", "aria-expanded" => "false", "data-bs-target" => "#collapse#{target}", "data-bs-toggle" => "collapse", id: "heading#{target}" }
+    .question= question
 
-    .icon.ml-3
-      %i.fa.fa-angle-down
-      %i.fa.fa-angle-up

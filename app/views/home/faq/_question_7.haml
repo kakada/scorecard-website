@@ -1,6 +1,6 @@
-.border.mb-2.shadow
+.accordion-item.border.mb-2.shadow
   = render 'home/faq/question', target: 'Seven', question: t('question.what_about_data_ownership')
 
-  #collapseSeven.collapse{"aria-labelledby" => "headingSeven", "data-parent" => "#faq"}
+  #collapseSeven.accordion-collapse.collapse{"aria-labelledby" => "headingSeven", "data-bs-parent" => "#faq"}
     .faq-body
       = t('answer.q7.the_data_owned_by_your_server')

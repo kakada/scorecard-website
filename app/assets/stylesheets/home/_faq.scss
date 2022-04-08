@@ -1,5 +1,3 @@
-$active: #dc3545;
-
 #faq-index {
   margin-bottom: 9.375em;
 
@@ -14,27 +12,9 @@ $active: #dc3545;
     &:hover {
       cursor: pointer;
     }
-
-    .icon {
-      color: $active;
-    }
   }
 
   .list-style-lower-alpha {
     list-style-type: lower-alpha;
-  }
-
-  [aria-expanded=true] {
-    .fa-angle-down {
-      display: none;
-    }
-
-    .question {
-      color: $active;
-    }
-  }
-
-  [aria-expanded=false] .fa-angle-up{
-    display: none;
   }
 }
