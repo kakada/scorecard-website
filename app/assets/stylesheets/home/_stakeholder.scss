@@ -1,70 +1,109 @@
-$font-size: 1em;
-$height: 100px;
+@media (max-width: 360px) {
+  .care {
+    height: 22px;
+  }
 
-.stakeholders {
-  .text-funded,
-  .text-implemented {
-    font-size: $font-size;
+  .api {
+    height: 27px;
+    margin: 0 8px;
+  }
+
+  .instedd {
+    height: 21px;
   }
 
   .img-funded {
-    height: $height;
+    height: 38px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 767px) {
+  .care {
+    height: 22px;
   }
 
-  .img-implemented {
-    margin: 0 5px;
-    height: $height / 2;
+  .api {
+    height: 27px;
+    margin: 0 8px;
+  }
+
+  .instedd {
+    height: 21px;
+  }
+
+  .img-funded {
+    height: 38px;
   }
 
   .img-implemented-wrapper {
-    height: $height;
+    height: 100px;
     & > a:not(:last-child) {
       margin-right: 15px;
     }
   }
 }
 
-$font-size-lg: 1.2em;
-$height-lg: 50px;
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
 
-.stakeholders-lg {
-  .text-funded,
-  .text-implemented {
-    font-size: $font-size-lg;
+// }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+  .care {
+    height: 40px;
+  }
+
+  .api {
+    height: 50px;
+    margin: 0 8px;
+  }
+
+  .instedd {
+    height: 40px;
   }
 
   .img-funded {
-    height: $height-lg *1.25;
-  }
-
-  .img-implemented {
-    height: $height-lg *.75;
-  }
-
-  .img-implemented-wrapper {
-    height: $height-lg *2;
-    & > a:not(:last-child) {
-      margin-right: 15px;
-    }
+    height: 50px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .stakeholders,
-  .stakeholders-lg {
-    display: block !important;
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .care {
+    height: 46px;
+  }
 
-    .implemented-by {
-      margin-top: 30px;
-    }
+  .api {
+    height: 60px;
+    margin: 0 8px;
+  }
 
-    .img-implemented-wrapper {
-      height: auto;
+  .instedd {
+    height: 46px;
+  }
 
-      & > a:not(:last-child) {
-        margin-right: 0;
-        margin: 0 0 25px 0;
-      }
-    }
+  .img-funded {
+    height: 57px;
   }
 }
+
+// @media screen and (max-width: 767px) {
+//   .stakeholders,
+//   .stakeholders-lg {
+//     // display: block !important;
+
+//     .implemented-by {
+//       margin-top: 30px;
+//     }
+
+//     .img-implemented-wrapper {
+//       height: auto;
+
+//       & > a:not(:last-child) {
+//         margin-right: 0;
+//         margin: 0 0 25px 0;
+//       }
+//     }
+//   }
+// }

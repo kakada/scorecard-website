@@ -2,11 +2,16 @@
 = render 'top_header'
 = render 'introduction'
 
-.introduction.mx-auto
-  %iframe{:allowfullscreen => "", :frameborder => "0", :height => "900", :src => "https://datastudio.google.com/embed/reporting/316c83c7-635e-4bd4-9fa7-d1e72ffd262b/page/p_2f0jzrbctc", :style => "border:0", :width => "900"}
+.introduction.mx-auto.text-center
+  %iframe.dashboard{:allowfullscreen => "", :frameborder => "0", :src => "https://datastudio.google.com/embed/reporting/316c83c7-635e-4bd4-9fa7-d1e72ffd262b/page/p_2f0jzrbctc", :style => "border:0"}
 
 = render 'stakeholder'
 = render 'faq'
+
+.content.content-mobile
+  = render 'social_share'
+
+= render 'footer'
 
 .sidebar-left
   = render 'social_share'
