@@ -1,0 +1,10 @@
+.footer-wrapper
+  .text-center
+    %span.reach-us
+      = t('footer.contact_us_via')
+    %span.email
+      - email = 'support@digital-csc.org'
+      = link_to email, "mailto:#{email}", class: 'email'
+
+  .text-center.copyright
+    = t('footer.copyright')

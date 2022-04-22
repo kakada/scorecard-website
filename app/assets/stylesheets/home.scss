@@ -3,6 +3,8 @@
 @import 'home/switch_language';
 @import 'home/layout';
 @import 'home/social_share';
+@import 'home/font';
+@import 'home/footer';
 
 .top-bar {
   background-color: #3261a4;
@@ -12,8 +14,4 @@
   right: 0;
   top: 0;
   z-index: 100;
-}
-
-.version {
-  font-size: 0.9em;
 }

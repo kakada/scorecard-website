@@ -34,3 +34,35 @@
   display: inline-block;
   margin-bottom: 8px;;
 }
+
+// For mobile
+.content-mobile {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+
+  .share-icon {
+    margin-bottom: 0;
+  }
+
+  .social-share-button {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  .social-share-button a {
+    margin: 0 8px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar-left {
+    display: none;
+  }
+
+  .content-mobile {
+    display: flex;
+  }
+}

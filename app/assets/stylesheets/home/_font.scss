@@ -1,0 +1,116 @@
+@media (min-width: 360px) and (max-width: 767px) {
+  .title {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .download-title {
+    font-size: 14px;
+  }
+
+  .version {
+    font-size: 12px;
+  }
+
+  .funded-by-title, .implemented-by-title {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+  }
+
+  .question {
+    font-size: 16px;
+  }
+
+  .faq-body {
+    font-size: 14px !important;
+  }
+}
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+
+// }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .download-title {
+    font-size: 20px;
+  }
+
+  .version {
+    font-size: 16px;
+  }
+
+  .funded-by-title, .implemented-by-title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .funded-by-title {
+    text-align: center;
+  }
+
+  .implemented-by {
+    text-align: left;
+  }
+
+  .question {
+    font-size: 20px;
+  }
+
+  .faq-body {
+    font-size: 18px !important;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .title {
+    font-size: 35px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .download-title {
+    font-size: 20px;
+  }
+
+  .version {
+    font-size: 16px;
+  }
+
+  .funded-by-title, .implemented-by-title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .funded-by-title {
+    text-align: center;
+  }
+
+  .implemented-by {
+    text-align: left;
+  }
+
+  .question {
+    font-size: 20px;
+  }
+
+  .faq-body {
+    font-size: 18px !important;
+  }
+}
