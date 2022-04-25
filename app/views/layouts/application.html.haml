@@ -17,6 +17,6 @@
 
     = Gon::Base.render_data
 
-  %body{ id: "#{controller_name}-#{action_name}"}
+  %body{ id: "#{controller_name}-#{action_name}", class: "content-#{I18n.locale}"}
     .content-wrapper
       = yield

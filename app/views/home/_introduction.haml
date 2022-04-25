@@ -1,14 +1,14 @@
-.introduction.my-4.d-flex
+.introduction.intro-layout.d-flex
   .d-flex.flex-column.mr-5
     %h5.title= t('introduction.the_digital_scorecard_app')
     .description
-      = t('introduction.digital_scorecard_introduction')
+      = t('introduction.digital_scorecard_introduction').html_safe
 
     .d-flex.justify-content-center.download-wrapper
       %div
         .text-center
           .download-title= t('introduction.download_available')
-          .version.mb-2= "#{t('introduction.version')} #{ENV['MOBILE_APP_VERSION']}"
+          .version= "#{t('introduction.version')} #{ENV['MOBILE_APP_VERSION']}"
 
         %a.play-store{href: 'https://play.google.com/store/apps/details?id=org.instedd.ilabsea.community_scorecard', target: '_blank'}
           = image_tag 'play_store.png'

@@ -1,6 +1,33 @@
+@font-face {
+  font-family: "Battambang Regular";
+  src: url("Battambang-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Battambang Bold";
+  src: url("Battambang-Bold.ttf");
+}
+
+.content-km {
+  font-family: "Battambang Regular";
+
+  .title {
+    font-family: "Battambang Bold";
+  }
+}
+
+.en-font {
+  font-family: var(--bs-body-font-family);
+}
+
+.km-font {
+  font-family: "Battambang Regular";
+}
+
 @media (min-width: 360px) and (max-width: 767px) {
   .title {
     font-size: 16px;
+    margin-top: 20px;
   }
 
   .description {
@@ -18,7 +45,6 @@
   .funded-by-title, .implemented-by-title {
     font-size: 10px;
     color: rgba(0, 0, 0, 0.6);
-    text-align: center;
   }
 
   .question {
@@ -78,7 +104,7 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .title {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .description {

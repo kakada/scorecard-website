@@ -4,6 +4,6 @@
   #collapseThree.accordion-collapse.collapse{"aria-labelledby" => "headingThree", "data-bs-parent" => "#faq"}
     .faq-body
       %ol
-        %li= t('answer.q3.save_resource')
-        %li= t('answer.q3.has_an_existing_community')
-        %li= t('answer.q3.if_feel_not_match_purpose_let_consult')
+        %li= t('answer.q3.save_resource').html_safe
+        %li= t('answer.q3.has_an_existing_community').html_safe
+        %li= t('answer.q3.if_feel_not_match_purpose_let_consult').html_safe
