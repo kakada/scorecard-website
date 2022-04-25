@@ -1,4 +1,4 @@
 .accordion-header
   .heading.accordion-button.collapsed{"aria-controls" => "collapse#{target}", "aria-expanded" => "false", "data-bs-target" => "#collapse#{target}", "data-bs-toggle" => "collapse", id: "heading#{target}" }
-    .question= question
+    .question= question.html_safe
 

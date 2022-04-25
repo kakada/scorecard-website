@@ -1,3 +1,7 @@
+body {
+  background-color: #fafafa;
+}
+
 .content-wrapper {
   overflow-x: hidden;
   padding-top: 70px;
@@ -13,6 +17,11 @@
   .introduction {
     max-width: 90%;
     margin-left: auto;
+  }
+
+  .intro-layout {
+    margin-top: 10px;
+    margin-bottom: 35px;
   }
 
   .dashboard {
@@ -64,9 +73,18 @@
     margin-top: 30px;
   }
 
-  #faq-index {
+  #faq-index, .stakeholder-wrapper {
     min-width: 318px;
     max-width: 90%;
+  }
+
+  .stakeholders {
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+
+  .version {
+    margin-bottom: 0;
   }
 }
 
@@ -84,6 +102,11 @@
   .introduction {
     max-width: 737px;
     margin-left: auto;
+  }
+
+  .intro-layout {
+    margin-top: 40px;
+    margin-bottom: 50px;
   }
 
   .dashboard {
@@ -138,8 +161,16 @@
     margin-top: 28px;
   }
 
-  #faq-index {
+  #faq-index, .stakeholder-wrapper {
     width: 664px;
+  }
+
+  .stakeholders {
+    padding: 14px 0;
+  }
+
+  .version {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -152,6 +183,11 @@
   .introduction {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .intro-layout {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .dashboard {
@@ -201,8 +237,16 @@
     margin-top: 42px;
   }
 
-  #faq-index {
+  #faq-index, .stakeholder-wrapper {
     width: 664px;
+  }
+
+  .stakeholders {
+    padding: 14px 0;
+  }
+
+  .version {
+    margin-bottom: 0.5rem;
   }
 }
 

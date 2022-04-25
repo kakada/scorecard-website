@@ -3,17 +3,17 @@
 
   #collapseFour.accordion-collapse.collapse{"aria-labelledby" => "headingFour", "data-bs-parent" => "#faq"}
     .faq-body
-      = t('answer.q4.digital_scorecard_has_two_component')
+      = t('answer.q4.digital_scorecard_has_two_component').html_safe
       %ol
         %li
-          = t('answer.q4.has_mobile_app')
-          = link_to t('answer.q4.link_to_download'), "https://play.google.com/store/apps/details?id=org.instedd.ilabsea.community_scorecard&hl=km&gl=US", target: "_blank"
-          = t('answer.q4.the_application')
+          = t('answer.q4.has_mobile_app').html_safe
+          = link_to t('answer.q4.link_to_download').html_safe, "https://play.google.com/store/apps/details?id=org.instedd.ilabsea.community_scorecard&hl=km&gl=US", target: "_blank"
+          = t('answer.q4.the_application').html_safe
 
         %li
-          = t('answer.q4.install_backend_on_your_server')
+          = t('answer.q4.install_backend_on_your_server').html_safe
 
           %ol.list-style-lower-alpha
             %li= link_to t('answer.q4.link_to_source_code'), "https://github.com/ilabsea/scorecard-web", target: "_blank"
 
-        %li= t('answer.q4.configure_on_mobile_app')
+        %li= t('answer.q4.configure_on_mobile_app').html_safe

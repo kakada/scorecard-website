@@ -3,6 +3,6 @@
 
   #collapseFive.accordion-collapse.collapse{"aria-labelledby" => "headingFive", "data-bs-parent" => "#faq"}
     .faq-body
-      = t('answer.q5.yes_there_is_central_digital_scorecard')
+      = t('answer.q5.yes_there_is_central_digital_scorecard').html_safe
       .my-4
         = image_tag 'how-score-card-works.png', alt: 'How scorecard works', class: 'img-fluid'

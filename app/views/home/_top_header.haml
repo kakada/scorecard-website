@@ -7,8 +7,8 @@
     #switch-language.btn-group
       %a#messagesDropdown.nav-link.dropdown-toggle.pe-0{"aria-expanded" => "false", "data-bs-toggle" => "dropdown", :type => "button", href: '#'}
         - language = { en: "english.png", km: "khmer.png" }
-        = image_tag language[I18n.locale], alt: "locale", size: "24x24", class: "me-2"
-        %span= t("language.#{I18n.locale}")
+        = image_tag language[I18n.locale], alt: "locale", size: "24x24"
+        %span.ms-1= t("language.#{I18n.locale}")
         %i.fas.fa-angle-down.fa-fw
 
       %ul.dropdown-menu.dropdown-menu-end
@@ -18,10 +18,10 @@
               = image_tag "khmer.png", alt: "locale", size: "24x24", class: "me-2"
 
             .font-weight-bold
-              .text-truncate= t('language.km')
+              .km-font.text-truncate= t('language.km')
         %li
           = link_to url_for(request.query_parameters.merge(locale: 'en')), class: 'switch-language dropdown-item d-flex align-items-center' do
             .dropdown-list-image.me-3
               = image_tag "english.png", alt: "locale", size: "24x24", class: "me-2"
             .font-weight-bold
-              .text-truncate= t('language.en')
+              .en-font.text-truncate= t('language.en')

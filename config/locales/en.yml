@@ -60,4 +60,4 @@ en:
       site: The Digital Scorecard Public Dashboard
   footer:
     contact_us_via: Contact us via
-    copyright: Copyright ©2022 Digital CSC. All rights reserved.
+    copyright: "Copyright <span class='en-font'>©2022 Digital CSC</span>. All rights reserved."

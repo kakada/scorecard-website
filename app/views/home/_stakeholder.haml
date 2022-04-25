@@ -1,8 +1,8 @@
-.d-flex.justify-content-center.my-3
-  .content.mx-auto
-    .d-flex.stakeholders.stakeholders-lg
-      .funded-by.text-center.flex-shrink-0.flex-grow-1.mx-3
-        .funded-by-title.text-center.mb-2
+.stakeholder-wrapper.my-3.mx-auto
+  .content.mx-auto.stakeholders{style: 'background-color: rgba(0, 0, 0, 0.16); border-radius: 3px;'}
+    .d-flex.justify-content-center
+      .funded-by.text-center
+        .funded-by-title.mb-2
           = t('stakeholder.funded_by')
 
         = link_to 'https://eeas.europa.eu/delegations/cambodia_en', target: '_blank' do
