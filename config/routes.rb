@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   get 'home', to: 'home#index'
   get 'cookie-policy', to: 'cookie_policy#index'
+
+  resources :faq, only: [:index]
 end

@@ -1,7 +1,11 @@
 .d-flex.justify-content-center.top-bar
   .content.d-flex.flex-grow-1.align-items-center
     .flex-grow-1
-      = image_tag 'logo.png', class: 'logo'
+      = link_to root_url do
+        = image_tag 'logo.png', class: 'logo'
+
+    .faq-link
+      = link_to "FAQ", faq_index_path, class: 'btn text-white'
 
     / Switch language
     #switch-language.btn-group
