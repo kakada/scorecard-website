@@ -19,4 +19,14 @@
 
   %body{ id: "#{controller_name}-#{action_name}", class: "content-#{I18n.locale}"}
     .content-wrapper
+      = render 'background'
+      = render 'top_header'
+
       = yield
+
+      .content.content-mobile
+        = render 'social_share'
+
+      = render 'footer'
+      .sidebar-left
+        = render 'social_share'
