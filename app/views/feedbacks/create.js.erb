@@ -1,0 +1,10 @@
+<% if params[:device_type] == "desktop" %>
+  $('[data-name="popover-content"]').html('<%= j render("feedbacks/form", device_type: params[:device_type]) %>');
+<% else %>
+  $('.bottom-sheet-boday').html('<%= j render("feedbacks/form", device_type: params[:device_type]) %>');
+  $('.body').animate({scrollTop: 0});
+<% end %>
+
+setTimeout(function() {
+  $(".btn-close").click();
+}, 5000)

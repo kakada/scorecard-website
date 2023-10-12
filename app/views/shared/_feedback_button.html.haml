@@ -1,0 +1,37 @@
+/ Button feedback for desktop-------------
+/ popup content
+%div{ hidden: "" }
+  %div{"data-name" => "popover-content", style: "min-width: 600px"}
+    = render "feedbacks/form", device_type: 'desktop'
+
+/ popup trigger button
+%a#btn-feedback.d-md-block.d-none.btn-feedback{ "data-bs-toggle": "popover", role: "button", tabindex: "0", title: t("feedback.give_feedback") }
+  / Full button
+  %span.btn.btn-primary.btn-feedback-full{ style: 'border-radius: 20px;' }
+    %i.fa-regular.fa-comment
+    = t('feedback.give_feedback')
+
+  / Short button
+  %span.btn.btn-primary.btn-feedback-short.d-none{ style: 'border-radius: 50%; width: 44px; height: 44px;' }
+    .d-flex.align-items-center.justify-content-center
+      %i.fa-solid.fa-xmark.text-white{ style: 'font-size: 28px;' }
+
+/ Button feedback for mobile---------------
+.d-md-none.btn-feedback
+  / bottom sheet trigger
+  %a.btn.btn-primary.show-modal{ style: 'border-radius: 20px;' }
+    %i.fa-regular.fa-comment
+    = t('feedback.give_feedback')
+
+  / bottom sheet content
+  .bottom-sheet
+    .sheet-overlay
+    .content
+      .header
+        .drag-icon
+          %span
+      .body
+        .title.mt-0.mb-1.text-center= t('feedback.give_feedback')
+
+        .bottom-sheet-boday
+          = render "feedbacks/form", device_type: 'mobile'

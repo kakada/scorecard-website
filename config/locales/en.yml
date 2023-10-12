@@ -61,3 +61,13 @@ en:
   footer:
     contact_us_via: Contact us via
     copyright: "Copyright <span class='en-font'>©2022 Digital CSC</span>. All rights reserved."
+
+  feedback:
+    feedback: Feedback
+    your_email: Your email (Optional)
+    your_message: Your message
+    send_successfully: Send successfully
+    we_are_here_for_you: "We're here for you: Connect with us for any questions or concerns."
+    give_feedback: Give feedback
+  shared:
+    send: Send message

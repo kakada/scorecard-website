@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'cookie-policy', to: 'cookie_policy#index'
 
   resources :faq, only: [:index]
+  resources :feedbacks, only: [:create]
 end

@@ -1,0 +1,13 @@
+- device_type ||= "desktop"
+
+= render "feedbacks/flash_message"
+/ Form
+= simple_form_for feedback, remote: true do |f|
+  = f.input :email, label: t('feedback.your_email')
+  = f.input :message, label: t('feedback.your_message')
+  = recaptcha_tags
+
+  %input{name: 'device_type', value: device_type, type: :hidden}
+
+  .mt-4
+    = f.submit t('shared.send'), class: 'btn btn-primary'

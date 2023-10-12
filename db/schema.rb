@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_04_090114) do
+ActiveRecord::Schema.define(version: 2023_10_12_045826) do
 
   create_table "ahoy_events", force: :cascade do |t|
     t.integer "visit_id"
@@ -51,6 +51,13 @@ ActiveRecord::Schema.define(version: 2022_04_04_090114) do
     t.datetime "started_at"
     t.index ["user_id"], name: "index_ahoy_visits_on_user_id"
     t.index ["visit_token"], name: "index_ahoy_visits_on_visit_token", unique: true
+  end
+
+  create_table "feedbacks", force: :cascade do |t|
+    t.string "email"
+    t.text "message"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
