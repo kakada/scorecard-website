@@ -43,6 +43,8 @@ gem "ahoy_matey", "~> 4.0.3"
 gem "simple_form", "~> 5.3.0"
 gem "recaptcha", "~> 5.15.0"
 
+gem "rack-attack", "~> 6.7.0"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
