@@ -9,7 +9,7 @@
     = csrf_meta_tags
     = csp_meta_tag
 
-    %link{:crossorigin => "anonymous", :href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css", :integrity => "sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==", :referrerpolicy => "no-referrer", :rel => "stylesheet"}
+    %link{:crossorigin => "anonymous", :href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css", :rel => "stylesheet"}
 
     = analytics_init if Setting.analytics_valid?
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -21,14 +21,21 @@
 
   %body{ id: "#{controller_name}-#{action_name}", class: "content-#{I18n.locale}"}
     .content-wrapper
-      = render 'background'
-      = render 'top_header'
+      = render 'shared/background'
+      = render 'shared/top_header'
 
       = yield
 
+      / Social share for mobile
       .content.content-mobile
-        = render 'social_share'
+        = render 'shared/social_share'
 
-      = render 'footer'
+      / Footer
+      = render 'shared/footer'
+
+      / Social share for desktop
       .sidebar-left
-        = render 'social_share'
+        = render 'shared/social_share'
+
+      / Feeback button
+      = render "shared/feedback_button"

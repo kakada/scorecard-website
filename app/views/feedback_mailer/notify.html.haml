@@ -1,0 +1,6 @@
+There is a feedback from a user
+
+%p= "Email: #{@feedback.email}" if @feedback.email.present?
+%p
+  %label= "Message: "
+  = @feedback.message
