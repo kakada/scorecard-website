@@ -9,4 +9,4 @@ Ahoy.api = false
 # see https://github.com/ankane/ahoy#geocoding
 Ahoy.geocode = false
 
-Ahoy.visit_duration = Setting.visit_duration
+Ahoy.visit_duration = (ENV.fetch("VISIT_DURATION_MINUTE") { 30 }).to_i.minutes
