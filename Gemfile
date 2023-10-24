@@ -31,7 +31,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem "google-analytics-rails", "~> 1.1.1"
 
-gem "bootstrap", "~> 5.1.3"
+gem "bootstrap", "~> 5.3.1"
 
 # Rails variables in your JS
 gem "gon", "6.4.0"
