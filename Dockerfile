@@ -1,4 +1,4 @@
-FROM ruby:3.0.1
+FROM ruby:3.2.2
 
 LABEL maintainer="Radin <radin@instedd.org>"
 
