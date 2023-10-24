@@ -1,6 +1,6 @@
 = render 'introduction'
 
 .introduction.mx-auto.text-center
-  %iframe.dashboard{:allowfullscreen => "", :frameborder => "0", :src => "https://datastudio.google.com/embed/reporting/316c83c7-635e-4bd4-9fa7-d1e72ffd262b/page/p_2f0jzrbctc", :style => "border:0"}
+  %iframe.dashboard{ allowfullscreen: "", frameborder: "0", src: ENV["DASHBOARD_URL"], style: "border:0" }
 
 = render 'stakeholder'
