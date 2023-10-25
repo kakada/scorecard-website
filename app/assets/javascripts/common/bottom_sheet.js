@@ -16,7 +16,7 @@ CSC_WEB.Common.BottomSheet = (() => {
     const showBottomSheet = () => {
         bottomSheet.classList.add("show");
         document.body.style.overflowY = "hidden";
-        updateSheetHeight(50);
+        updateSheetHeight(58);
     }
 
     const updateSheetHeight = (height) => {
@@ -53,7 +53,7 @@ CSC_WEB.Common.BottomSheet = (() => {
         isDragging = false;
         bottomSheet.classList.remove("dragging");
         const sheetHeight = parseInt(sheetContent.style.height);
-        sheetHeight < 25 ? hideBottomSheet() : sheetHeight > 75 ? updateSheetHeight(100) : updateSheetHeight(50);
+        sheetHeight < 25 ? hideBottomSheet() : sheetHeight > 75 ? updateSheetHeight(100) : updateSheetHeight(58);
     }
 
     dragIcon.addEventListener("mousedown", dragStart);
