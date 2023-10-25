@@ -65,9 +65,8 @@ en:
   feedback:
     feedback: Feedback
     your_email: Your email (Optional)
-    your_message: Your message
+    your_comment: Your comment/feedback
     send_successfully: Send successfully
     we_are_here_for_you: "We're here for you: Connect with us for any questions or concerns."
-    give_feedback: Give feedback
   shared:
-    send: Send message
+    submit: Submit
