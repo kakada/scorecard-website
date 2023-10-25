@@ -65,9 +65,8 @@ km:
   feedback:
     feedback: មតិយោបល់
     your_email: អ៊ីម៉ែលរបស់អ្នក (ប្រសិនបើមាន)
-    your_message: សាររបស់អ្នក
+    your_comment: មតិយោបល់របស់អ្នក
     send_successfully: ផ្ញើជូនដោយជោគជ័យ
     We_are_here_for_you: យើងនៅទីនេះសម្រាប់អ្នក៖ សូមបញ្ចេញមតិរបស់លោកអ្នកដើម្បីជួយកែលម្អ
-    give_feedback: បញ្ចេញមតិយោបល់
   shared:
-    send: បញ្ជូនសារ
+    submit: បញ្ជូន

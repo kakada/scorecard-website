@@ -5,11 +5,11 @@
     = render "feedbacks/form", device_type: 'desktop'
 
 / popup trigger button
-%a#btn-feedback.d-md-block.d-none.btn-feedback{ "data-bs-toggle": "popover", role: "button", tabindex: "0", title: t("feedback.give_feedback") }
+%a#btn-feedback.d-md-block.d-none.btn-feedback{ "data-bs-toggle": "popover", role: "button", tabindex: "0", title: t("feedback.feedback") }
   / Full button
   %span.btn.btn-primary.btn-feedback-full{ style: 'border-radius: 20px;' }
     %i.fa-regular.fa-comment
-    = t('feedback.give_feedback')
+    = t('feedback.feedback')
 
   / Short button
   %span.btn.btn-primary.btn-feedback-short.d-none{ style: 'border-radius: 50%; width: 44px; height: 44px;' }
@@ -21,7 +21,7 @@
   / bottom sheet trigger
   %a.btn.btn-primary.show-modal{ style: 'border-radius: 20px;' }
     %i.fa-regular.fa-comment
-    = t('feedback.give_feedback')
+    = t('feedback.feedback')
 
   / bottom sheet content
   .bottom-sheet
@@ -31,7 +31,7 @@
         .drag-icon
           %span
       .body
-        .title.mt-0.mb-1.text-center= t('feedback.give_feedback')
+        .title.mt-0.mb-1.text-center= t('feedback.feedback')
 
         .bottom-sheet-boday
           = render "feedbacks/form", device_type: 'mobile'

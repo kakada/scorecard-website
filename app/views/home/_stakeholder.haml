@@ -1,7 +1,7 @@
 .stakeholder-wrapper.my-3.mx-auto
   .content.mx-auto.stakeholders{style: 'background-color: rgba(0, 0, 0, 0.16); border-radius: 3px;'}
     .d-flex.justify-content-center
-      .funded-by.text-center
+      .funded-by.text-center.me-4
         .funded-by-title.mb-2
           = t('stakeholder.funded_by')
 
@@ -9,7 +9,7 @@
           = image_tag 'eu.png', class: 'img-funded', alt: 'EU Cambodia'
 
       .implemented-by.mx-3.d-flex.flex-column
-        .implemented-by-title.mb-2
+        .implemented-by-title.mb-2.text-center
           = t('stakeholder.implemented_by')
 
         .d-flex.align-items-center.flex-grow-1
