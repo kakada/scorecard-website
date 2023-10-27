@@ -78,6 +78,9 @@ GEM
       activesupport (>= 6.1)
       device_detector (>= 1)
       safely_block (>= 0.4)
+    annotate (3.2.0)
+      activerecord (>= 3.2, < 8.0)
+      rake (>= 10.4, < 14.0)
     autoprefixer-rails (10.4.15.0)
       execjs (~> 2)
     base64 (0.1.1)
@@ -277,6 +280,7 @@ PLATFORMS
 
 DEPENDENCIES
   ahoy_matey (~> 5.0.2)
+  annotate
   bootsnap (>= 1.4.4)
   bootstrap (~> 5.3.1)
   byebug
