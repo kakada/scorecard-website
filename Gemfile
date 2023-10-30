@@ -41,7 +41,7 @@ gem "meta-tags", "~> 2.19.0"
 gem "ahoy_matey", "~> 5.0.2"
 
 gem "simple_form", "~> 5.3.0"
-gem "recaptcha", "~> 5.15.0"
+gem "recaptcha", "~> 5.16.0"
 
 gem "rack-attack", "~> 6.7.0"
 
