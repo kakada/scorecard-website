@@ -10,14 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_10_12_045826) do
+ActiveRecord::Schema[7.1].define(version: 2023_10_12_045826) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "ahoy_events", force: :cascade do |t|
-    t.integer "visit_id"
-    t.integer "user_id"
+    t.bigint "visit_id"
+    t.bigint "user_id"
     t.string "name"
     t.text "properties"
-    t.datetime "time"
+    t.datetime "time", precision: nil
     t.index ["name", "time"], name: "index_ahoy_events_on_name_and_time"
     t.index ["user_id"], name: "index_ahoy_events_on_user_id"
     t.index ["visit_id"], name: "index_ahoy_events_on_visit_id"
@@ -26,7 +28,7 @@ ActiveRecord::Schema.define(version: 2023_10_12_045826) do
   create_table "ahoy_visits", force: :cascade do |t|
     t.string "visit_token"
     t.string "visitor_token"
-    t.integer "user_id"
+    t.bigint "user_id"
     t.string "ip"
     t.text "user_agent"
     t.text "referrer"
@@ -48,7 +50,7 @@ ActiveRecord::Schema.define(version: 2023_10_12_045826) do
     t.string "app_version"
     t.string "os_version"
     t.string "platform"
-    t.datetime "started_at"
+    t.datetime "started_at", precision: nil
     t.index ["user_id"], name: "index_ahoy_visits_on_user_id"
     t.index ["visit_token"], name: "index_ahoy_visits_on_visit_token", unique: true
   end
@@ -56,8 +58,8 @@ ActiveRecord::Schema.define(version: 2023_10_12_045826) do
   create_table "feedbacks", force: :cascade do |t|
     t.string "email"
     t.text "message"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

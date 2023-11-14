@@ -1,15 +1,10 @@
-FROM ruby:3.2.2
+FROM ruby:3.1.3
 
 LABEL maintainer="Radin <radin@instedd.org>"
 
-# Updating nodejs version
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
-  echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
-  curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-
 # Install dependencies
 RUN apt-get update && \
-  apt-get install -y nodejs yarn postgresql-client vim && \
+  apt-get install -y nodejs yarn postgresql-client && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
