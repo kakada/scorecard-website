@@ -5,10 +5,8 @@
       = t('introduction.digital_scorecard_introduction').html_safe
 
     .d-flex.justify-content-center.download-wrapper
-      %div
-        .text-center
-          .download-title= t('introduction.download_available')
-          .version= "#{t('introduction.version')} #{ENV['MOBILE_APP_VERSION']}"
+      .d-flex.flex-column.align-items-center
+        .download-title.flex-grow-1= t('introduction.download_available')
 
         %a.play-store{href: 'https://play.google.com/store/apps/details?id=org.instedd.ilabsea.community_scorecard', target: '_blank'}
           = image_tag 'play_store.png'
