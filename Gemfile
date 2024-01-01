@@ -37,7 +37,7 @@ gem "bootstrap", "~> 5.3.1"
 gem "gon", "6.4.0"
 
 gem "social-share-button", "~> 1.2.4"
-gem "meta-tags", "~> 2.19.0"
+gem "meta-tags", "~> 2.20.0"
 gem "ahoy_matey", "~> 5.0.2"
 
 gem "simple_form", "~> 5.3.0"
