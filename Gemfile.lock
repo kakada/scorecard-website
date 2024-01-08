@@ -169,13 +169,13 @@ GEM
       timeout
     net-smtp (0.4.0)
       net-protocol
-    nio4r (2.5.9)
+    nio4r (2.7.0)
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     popper_js (2.11.8)
     psych (5.1.1.1)
       stringio
-    puma (6.4.0)
+    puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (3.0.8)
@@ -291,7 +291,7 @@ DEPENDENCIES
   jquery-rails (~> 4.6.0)
   listen (~> 3.3)
   meta-tags (~> 2.19.0)
-  puma (~> 6.4.0)
+  puma (~> 6.4.2)
   rack-attack (~> 6.7.0)
   rails (~> 7.1.1)
   recaptcha (~> 5.16.0)
